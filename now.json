@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "wp-config.php", "use": "@now/wordpress" }
+  ],
+  "routes": [
+    { "src": "/wp-admin/?", "dest": "index.php" },
+    { "src": ".*\\.php$", "dest": "index.php" }
+  ],
+  "env": {
+    "DB_NAME": "hushudszyj_db1",
+    "DB_USER": "hushudszyj_1",
+    "DB_PASSWORD": "viAafXw7Fgt38PpZHhm8",
+    "DB_HOST": "dedi2015.nur4.host-h.net"
+  }
+}
